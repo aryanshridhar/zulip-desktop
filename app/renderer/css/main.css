@@ -342,6 +342,7 @@ webview.focus {
 
 #loading-tooltip,
 #dnd-tooltip,
+#clipboard-tooltip,
 #back-tooltip,
 #reload-tooltip,
 #setting-tooltip {
@@ -361,6 +362,7 @@ webview.focus {
 
 #loading-tooltip::after,
 #dnd-tooltip::after,
+#clipboard-tooltip::after,
 #back-tooltip::after,
 #reload-tooltip::after,
 #setting-tooltip::after {

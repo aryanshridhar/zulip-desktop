@@ -72,6 +72,7 @@ class ServerManagerView {
 	$addServerButton: HTMLButtonElement;
 	$tabsContainer: Element;
 	$reloadButton: HTMLButtonElement;
+	$clipboardtooltip: HTMLButtonElement;
 	$loadingIndicator: HTMLButtonElement;
 	$settingsButton: HTMLButtonElement;
 	$webviewsContainer: Element;
@@ -107,6 +108,7 @@ class ServerManagerView {
 
 		this.$addServerTooltip = document.querySelector('#add-server-tooltip');
 		this.$reloadTooltip = $actionsContainer.querySelector('#reload-tooltip');
+		this.$clipboardtooltip = $actionsContainer.querySelector('#clipboard-tooltip');
 		this.$loadingTooltip = $actionsContainer.querySelector('#loading-tooltip');
 		this.$settingsTooltip = $actionsContainer.querySelector('#setting-tooltip');
 
@@ -433,6 +435,7 @@ class ServerManagerView {
 		this.sidebarHoverEvent(this.$loadingIndicator, this.$loadingTooltip);
 		this.sidebarHoverEvent(this.$settingsButton, this.$settingsTooltip);
 		this.sidebarHoverEvent(this.$reloadButton, this.$reloadTooltip);
+		this.sidebarHoverEvent(this.$clipboardtooltip, this.$clipboardtooltip);
 		this.sidebarHoverEvent(this.$backButton, this.$backTooltip);
 		this.sidebarHoverEvent(this.$dndButton, this.$dndTooltip);
 	}
